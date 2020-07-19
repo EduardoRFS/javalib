@@ -42,7 +42,7 @@ LOCALDEST=
 DESTDIR=
 # The ocamlpath variable for the compiler to locate the locally-installed
 # packages (depends on LOCALDEST)
-OCAMLPATH=
+OCAMLPATH=${OCAMLPATH:""}
 # The packages that need to be made in addition to Savalib / Sawja
 MAKEDEP=
 # The packages that need to be made in addition to Savalib / Sawja

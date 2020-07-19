@@ -1,0 +1,9 @@
+{
+  "source": "./javalib.opam",
+  "override": {
+    "build": [
+      ["./configure.sh"],
+      ["make", "OCAMLPATH=$OCAMLPATH"]
+    ]
+  }
+}
