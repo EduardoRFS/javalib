@@ -1,9 +1,29 @@
 {
-  "source": "./javalib.opam",
-  "override": {
+  "name": "javalib",
+  "dependencies": {
+    "ocaml": "^4.x.x",
+    "@opam/conf-which": "*",
+    "@opam/ocamlfind": "*",
+    "@opam/camlzip": "^1.05",
+    "@opam/extlib": "*",
+    "@opam/containers": "*"
+  },
+  "esy": {
     "build": [
-      ["./configure.sh"],
-      ["make", "OCAMLPATH=$OCAMLPATH"]
+      [
+        "./configure.sh"
+      ],
+      [
+        "make",
+        "OCAMLPATH=$OCAMLPATH"
+      ]
+    ],
+    "install": [
+      [
+        "make",
+        "install",
+        "OCAMLFIND_DESTDIR=$OCAMLFIND_DESTDIR"
+      ]
     ]
   }
 }
