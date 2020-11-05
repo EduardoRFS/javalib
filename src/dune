@@ -1,5 +1,5 @@
 (library
- (name javalib)
+ (name javalib_pack)
  (public_name javalib)
  (modules_without_implementation jClassLow)
  (flags
