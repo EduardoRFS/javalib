@@ -6,24 +6,14 @@
     "@opam/ocamlfind": "*",
     "@opam/camlzip": "^1.05",
     "@opam/extlib": "*",
-    "@opam/containers": "*"
+    "@opam/containers": "*",
+    "@opam/dune": "*"
+  },
+  "devDependencies": {
+    "@opam/ocaml-lsp-server": "*"
   },
   "esy": {
-    "build": [
-      [
-        "./configure.sh"
-      ],
-      [
-        "make",
-        "OCAMLPATH=$OCAMLPATH"
-      ]
-    ],
-    "install": [
-      [
-        "make",
-        "install",
-        "OCAMLFIND_DESTDIR=$OCAMLFIND_DESTDIR"
-      ]
-    ]
+    "build": "dune build -p javalib",
+    "install": "esy-installer javalib.install"
   }
 }

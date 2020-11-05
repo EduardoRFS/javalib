@@ -21,6 +21,8 @@
  * <http://www.gnu.org/licenses/>.
  *)
 
+open Javalib_ptrees
+
 (** Basic elements of class files. *)
 
 (** {1 Definition of basic types and descriptors.} *)

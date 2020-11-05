@@ -21,6 +21,8 @@
  * <http://www.gnu.org/licenses/>.
  *)
 
+open Javalib_ptrees
+
 (* {2 Basic Elements.} *)
 
 type class_name = int * string

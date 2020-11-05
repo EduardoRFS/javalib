@@ -495,7 +495,7 @@ let unparse_class_low_level ch c =
 let unparse_class_low_level ch c =
   try unparse_class_low_level ch c
   with Class_structure_error _ as e ->
-    JLib.IO.close_out ch;
+    let _ = JLib.IO.close_out ch in
     raise e
 
 let unparse_class ch c =

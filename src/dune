@@ -1,0 +1,9 @@
+(library
+ (name javalib)
+ (public_name javalib)
+ (modules_without_implementation jClassLow)
+ (flags
+  (:standard -w -9))
+ (libraries javalib_ptrees camlzip containers extlib))
+
+(ocamllex jManifest)
